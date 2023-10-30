@@ -1,0 +1,121 @@
+|meu_fourbits_adder
+a_i[0] => a_i[0].IN1
+a_i[1] => a_i[1].IN1
+a_i[2] => a_i[2].IN1
+a_i[3] => a_i[3].IN1
+b_i[0] => b_i[0].IN1
+b_i[1] => b_i[1].IN1
+b_i[2] => b_i[2].IN1
+b_i[3] => b_i[3].IN1
+carry_i => carry_i.IN1
+carry_o << fulladder:U11.carry_o
+sum_o[0] << fulladder:U00.sum_o
+sum_o[1] << fulladder:U01.sum_o
+sum_o[2] << fulladder:U10.sum_o
+sum_o[3] << fulladder:U11.sum_o
+
+
+|meu_fourbits_adder|fulladder:U00
+a_i => a_i.IN1
+b_i => b_i.IN1
+carry_i => carry_i.IN1
+sum_o <= halfadd:U2.sum_o
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U00|halfadd:U1
+a_i => sum_o.IN0
+a_i => carry_o.IN0
+b_i => sum_o.IN1
+b_i => carry_o.IN1
+sum_o <= sum_o.DB_MAX_OUTPUT_PORT_TYPE
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U00|halfadd:U2
+a_i => sum_o.IN0
+a_i => carry_o.IN0
+b_i => sum_o.IN1
+b_i => carry_o.IN1
+sum_o <= sum_o.DB_MAX_OUTPUT_PORT_TYPE
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U01
+a_i => a_i.IN1
+b_i => b_i.IN1
+carry_i => carry_i.IN1
+sum_o <= halfadd:U2.sum_o
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U01|halfadd:U1
+a_i => sum_o.IN0
+a_i => carry_o.IN0
+b_i => sum_o.IN1
+b_i => carry_o.IN1
+sum_o <= sum_o.DB_MAX_OUTPUT_PORT_TYPE
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U01|halfadd:U2
+a_i => sum_o.IN0
+a_i => carry_o.IN0
+b_i => sum_o.IN1
+b_i => carry_o.IN1
+sum_o <= sum_o.DB_MAX_OUTPUT_PORT_TYPE
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U10
+a_i => a_i.IN1
+b_i => b_i.IN1
+carry_i => carry_i.IN1
+sum_o <= halfadd:U2.sum_o
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U10|halfadd:U1
+a_i => sum_o.IN0
+a_i => carry_o.IN0
+b_i => sum_o.IN1
+b_i => carry_o.IN1
+sum_o <= sum_o.DB_MAX_OUTPUT_PORT_TYPE
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U10|halfadd:U2
+a_i => sum_o.IN0
+a_i => carry_o.IN0
+b_i => sum_o.IN1
+b_i => carry_o.IN1
+sum_o <= sum_o.DB_MAX_OUTPUT_PORT_TYPE
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U11
+a_i => a_i.IN1
+b_i => b_i.IN1
+carry_i => carry_i.IN1
+sum_o <= halfadd:U2.sum_o
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U11|halfadd:U1
+a_i => sum_o.IN0
+a_i => carry_o.IN0
+b_i => sum_o.IN1
+b_i => carry_o.IN1
+sum_o <= sum_o.DB_MAX_OUTPUT_PORT_TYPE
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|meu_fourbits_adder|fulladder:U11|halfadd:U2
+a_i => sum_o.IN0
+a_i => carry_o.IN0
+b_i => sum_o.IN1
+b_i => carry_o.IN1
+sum_o <= sum_o.DB_MAX_OUTPUT_PORT_TYPE
+carry_o <= carry_o.DB_MAX_OUTPUT_PORT_TYPE
+
+

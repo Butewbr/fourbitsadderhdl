@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\hdl\Lab5 - Entendendo Operadores-20230922\cordic-master
+vfulladder
+Z1 !s100 aLnS5=@kR=m;J?D<6]7Y30
+Z2 IJX6lC^jl;X9J`Ljj4baBR2
+Z3 VlOd=Ig6DLKTDaFfeTig;11
+Z4 dC:\hdl\fourbits-adder\sim
+Z5 w1694783251
+Z6 8C:/hdl/fourbits-adder/src/fulladder.v
+Z7 FC:/hdl/fourbits-adder/src/fulladder.v
+L0 6
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/hdl/fourbits-adder/src/fulladder.v|
+Z10 o-work work -O0
+Z11 !s108 1695388843.673000
+Z12 !s107 C:/hdl/fourbits-adder/src/fulladder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vhalfadd
+Z13 !s100 XUoiej8c3:z?Q^BhRUE@N3
+Z14 IHY:CO]:Q9PbEOe3X<^hz:2
+Z15 VQz1IMP_IJC9omoT[67_Yk3
+R4
+Z16 w1695388471
+Z17 8C:/hdl/fourbits-adder/src/halfadd.v
+Z18 FC:/hdl/fourbits-adder/src/halfadd.v
+L0 6
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|C:/hdl/fourbits-adder/src/halfadd.v|
+R10
+Z20 !s108 1695388843.760000
+Z21 !s107 C:/hdl/fourbits-adder/src/halfadd.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmeu_fourbits_adder
+Z22 !s100 Eg:?F`Y;1EV;G7KngndJl3
+Z23 Ij[UWFmHc27IE32?=5d?@A2
+Z24 V2^7K`=Zl[<kc1IUWB<Ez20
+R4
+Z25 w1695385880
+Z26 8C:\hdl\fourbits-adder\src\meu_fourbits_adder.v
+Z27 FC:\hdl\fourbits-adder\src\meu_fourbits_adder.v
+L0 3
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|C:\hdl\fourbits-adder\src\meu_fourbits_adder.v|
+R10
+!i10b 1
+!s85 0
+Z29 !s108 1695388843.848000
+Z30 !s107 C:\hdl\fourbits-adder\src\meu_fourbits_adder.v|
+!s101 -O0
+vmeu_fourbits_adder_tb
+!i10b 1
+!s100 gdClCmfa?2>iOBnZ>?PBa0
+IoU]jU5e3bJg1zY7^1:eLo2
+Z31 VZOef5fz0kIE1LC_?d3SLE3
+R4
+w1695388836
+Z32 8C:/hdl/fourbits-adder/src/meu_fourbits_adder_tb.v
+Z33 FC:/hdl/fourbits-adder/src/meu_fourbits_adder_tb.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1695388843.942000
+!s107 C:/hdl/fourbits-adder/src/meu_fourbits_adder_tb.v|
+Z34 !s90 -reportprogress|300|-work|work|C:/hdl/fourbits-adder/src/meu_fourbits_adder_tb.v|
+!s101 -O0
+R10
